@@ -1,7 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import ReactBtn from '../components/react/react-button.jsx';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import ReactBtn from "../components/react/react-button.jsx";
+import VueBtn from "../components/vue/vue-button.vue";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -36,11 +37,16 @@ import ReactBtn from '../components/react/react-button.jsx';
 		</svg>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 
-		<ReactBtn client:load />
+		<div class="flex gap-10 flex-wrap">
+			<ReactBtn client:load />
+			<VueBtn client:load />
+		</div>
 
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			To get started, open the directory <code>src/pages</code> in your
+			project.<br />
+			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro"
+			message above.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -103,7 +109,10 @@ import ReactBtn from '../components/react/react-button.jsx';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
@@ -125,4 +134,4 @@ import ReactBtn from '../components/react/react-button.jsx';
 		padding: 0;
 	}
 </style>
-../components/react/react-button.jsx
+ ../components/react/react-button.jsx
