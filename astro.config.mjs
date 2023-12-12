@@ -6,6 +6,7 @@ import preact from '@astrojs/preact';
 import lit from '@astrojs/lit';
 import alpine from '@astrojs/alpinejs';
 import solid from '@astrojs/solid-js';
+import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,9 +14,9 @@ export default defineConfig({
         react({
             include: ['**/react/**'],
         }),
-        vue({
-            include: ['**/vue/**'],
-        }),
+        // vue({
+        //     include: ['**/vue/**'],
+        // }),
         svelte({
             include: ['**/svelte/**'],
         }),
@@ -31,5 +32,6 @@ export default defineConfig({
         solid({
             include: ['**/solid/**'],
         }),
+        tailwind(),
     ],
 });
