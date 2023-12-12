@@ -16,6 +16,7 @@
     "@astrojs/react": "^3.0.7",
     "@astrojs/solid-js": "^3.0.2",
     "@astrojs/svelte": "^5.0.1",
+    "@astrojs/tailwind": "^5.0.3",
     "@astrojs/vue": "^4.0.3",
     "@types/alpinejs": "^3.13.5",
     "@types/react": "^18.2.43",
@@ -29,6 +30,7 @@
     "react-dom": "^18.2.0",
     "solid-js": "^1.8.7",
     "svelte": "^4.2.8",
+    "tailwindcss": "^3.3.6",
     "vue": "^3.3.11"
   }
 }
