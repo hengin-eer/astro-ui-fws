@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import BaseBtn from '../components/react/base-button.jsx';
+import ReactBtn from '../components/react/react-button.jsx';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -36,7 +36,7 @@ import BaseBtn from '../components/react/base-button.jsx';
 		</svg>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 
-		<BaseBtn client:load />
+		<ReactBtn client:load />
 
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -125,3 +125,4 @@ import BaseBtn from '../components/react/base-button.jsx';
 		padding: 0;
 	}
 </style>
+../components/react/react-button.jsx

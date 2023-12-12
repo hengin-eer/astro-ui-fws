@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const BaseBtn = () => {
+const ReactBtn = () => {
     const [count, setCount] = useState(0);
 
     const addCount = () => {
@@ -33,4 +33,4 @@ const BaseBtn = () => {
     )
 };
 
-export default BaseBtn;
+export default ReactBtn;
