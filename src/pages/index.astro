@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import ReactBtn from "../components/react/react-button.jsx";
 import VueBtn from "../components/vue/vue-button.vue";
+import SvelteBtn from "../components/svelte/svelte-button.svelte";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -40,6 +41,7 @@ import VueBtn from "../components/vue/vue-button.vue";
 		<div class="flex gap-10 flex-wrap">
 			<ReactBtn client:load />
 			<VueBtn client:load />
+			<SvelteBtn client:load />
 		</div>
 
 		<p class="instructions">
