@@ -14,9 +14,7 @@ export default defineConfig({
         react({
             include: ['**/react/**'],
         }),
-        // vue({
-        //     include: ['**/vue/**'],
-        // }),
+        vue(),
         svelte({
             include: ['**/svelte/**'],
         }),
