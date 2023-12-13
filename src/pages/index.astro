@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import ReactBtn from "../components/react/react-button.jsx";
 import VueBtn from "../components/vue/vue-button.vue";
 import SvelteBtn from "../components/svelte/svelte-button.svelte";
+import PreactBtn from "../components/preact/preact-button.jsx";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -42,6 +43,7 @@ import SvelteBtn from "../components/svelte/svelte-button.svelte";
 			<ReactBtn client:load />
 			<VueBtn client:load />
 			<SvelteBtn client:load />
+			<PreactBtn client:load />
 		</div>
 
 		<p class="instructions">
