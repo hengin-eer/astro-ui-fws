@@ -7,7 +7,6 @@ import SvelteBtn from "../components/svelte/svelte-button.svelte";
 import PreactBtn from "../components/preact/preact-button.jsx";
 import { LitBtn } from "../components/lit/lit-button.js";
 // import "../components/lit/lit-button.js";
-import "../components/lit/increment-counter.js";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -49,7 +48,6 @@ import "../components/lit/increment-counter.js";
 			<PreactBtn client:load />
 			<LitBtn />
 			<!-- <lit-btn></lit-btn> -->
-			<increment-counter></increment-counter>
 		</div>
 
 		<p class="instructions">
